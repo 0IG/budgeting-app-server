@@ -25,3 +25,5 @@ app.get("/", (req, res) => {
 });
 
 app.use("/transactions", budgetController);
+
+module.exports = app;
