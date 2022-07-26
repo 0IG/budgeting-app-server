@@ -25,6 +25,3 @@ app.get("/", (req, res) => {
 });
 
 app.use("/transactions", budgetController);
-
-//Listen
-app.listen(PORT, () => console.log("Listening on port:", PORT));
