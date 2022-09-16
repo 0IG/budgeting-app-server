@@ -22,9 +22,9 @@ budget.post("/", (req, res) => {
 });
 // Delete
 budget.delete("/:id", (req, res) => {
-  const { id } = req.params;
+  const { id } = parseInt(req.params);
   purchaseArray.splice(id, 1);
-  res.send(budgetData);
+  res.send(purchaseArray);
 });
 // Update
 budget.put("/:id", (req, res) => {});
